@@ -30,15 +30,23 @@
 //solution : -
 
 
-int reverse(int x){
-    int c;
-    while(x!=0){
-        int r=x%10;
-        c=c*10+r;
-        x=x/10;
-        
-    }
-    
-    return c;
-
-}
+class Solution {
+public:
+     int reverse(int x) {
+        long temp=0;
+        if(x>=INT_MIN && x<=INT_MAX)
+        {
+            while(x!=0)
+            {    if(temp*10<INT_MAX){}
+                temp=temp*10+x%10;
+                x/=10;
+            }
+        }
+             if(temp>=INT_MIN && temp<=INT_MAX)
+             {
+            return temp;
+             }
+            else
+                return 0;
+        }
+};

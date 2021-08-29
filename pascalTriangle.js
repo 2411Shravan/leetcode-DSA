@@ -37,11 +37,20 @@
     while(result.length!=numRows){
             let previous=result[result.length-1];
             
-        let row=[1];
-        for(var i=1;i<previous.length;i++){
-            row.push(previous[i-1]+previous[i]);
+        let row=[];
+        for(var i=0;i<=previous.length;i++){
+            if(i==0){
+               row.push(1);
+               }
+            else if(i==previous.length){
+                    row.push(1);
+                    }
+            else{
+                row.push(previous[i-1]+previous[i]);
+            }
+            
         }
-        row.push(1);
+      
         result.push(row);
           }
     

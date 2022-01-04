@@ -20,13 +20,7 @@ bool res = isSameTree(p->left,q->left);
 bool res1 = isSameTree(p->right,q->right);
 return res&&res1;  
       
-    
 
-        
-     
-        
-        
-        
 
     }
 };

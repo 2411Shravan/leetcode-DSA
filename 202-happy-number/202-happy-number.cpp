@@ -4,9 +4,11 @@ public:
         int temp=n;
         
         int squared_num=0;
+        int i=1;
         while(temp>0){
             int temp1=temp%10;
             squared_num+=temp1*temp1;
+            // i=i*10;
             temp=temp/10;
         }
         cout<<squared_num<<endl;

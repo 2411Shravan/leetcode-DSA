@@ -4,13 +4,13 @@ public:
         int continuity=1;
         int c=0;
         sort(nums.begin(),nums.end());
-        if(nums.size()==1 && nums[0]==1){
-            return 0;
+        if((nums.size()==1 && nums[0]==1) || (nums.size()==1 && nums[0]==0)){
+            return !nums[0];
         }
         
-        if(nums.size()==1 && nums[0]==0){
-            return 1;
-        }
+        // if(nums.size()==1 && nums[0]==0){
+        //     return 1;
+        // }
         if(nums[0]==1){
             return 0;
         }

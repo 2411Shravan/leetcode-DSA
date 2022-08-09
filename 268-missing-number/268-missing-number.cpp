@@ -8,9 +8,6 @@ public:
             return !nums[0];
         }
         
-        // if(nums.size()==1 && nums[0]==0){
-        //     return 1;
-        // }
         if(nums[0]==1){
             return 0;
         }

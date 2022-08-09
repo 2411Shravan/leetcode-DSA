@@ -59,6 +59,14 @@ public:
             secondT[t[i]-'a']++;
         }
         
-        return firstS==secondT;
+        for(int j=0;j<26;j++){
+            if(firstS[j]==secondT[j]){
+                continue;
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
     }
 };

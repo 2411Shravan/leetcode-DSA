@@ -19,9 +19,13 @@ public:
          sort(me.begin(),me.end(),cmp);
         string ret="";
         for(auto i: me){
-            while(i.second>0){
+            // while(i.second>0){
+            //     ret+=i.first;
+            //     i.second--;
+            // }
+            
+            for(int j=0;j<i.second;j++){
                 ret+=i.first;
-                i.second--;
             }
         }
         
